@@ -19,9 +19,9 @@ from model.pretrained import se_resnext_half
 
 
 
-class tag2pix(object):
+class multag2pix(object):
     def __init__(self, args):
-        if args.model == 'tag2pix':
+        if args.model == 'multag2pix':
             from network import Generator
         elif args.model == 'senet':
             from model.GD_senet import Generator
@@ -380,78 +380,78 @@ class tag2pix(object):
             
             # print("convnet_dev_CBAM_Att_CARAFE的测试") 
 #             230331-223109  166-200epoch
-            # # loadurl=self.result_path /'230301-221217'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # loadurl=self.result_path /'230331-223109'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_CBAM_Att_CARAFE_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # # loadurl=self.result_path /'230301-221217'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # loadurl=self.result_path /'230331-223109'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_CBAM_Att_CARAFE_result'/ 'multag2pix_{}_epoch'.format(epoche)
             # self.load_test(loadurl)
             
             # print("convnet_dev（cit)的测试") 
-            # loadurl=self.result_path /'230207-221257'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_new_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230207-221257'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_new_result'/ 'multag2pix_{}_epoch'.format(epoche)
             # self.load_test(loadurl)
             
             
 #             results/230306-194037
             # print("adain的测试") 
-            # loadurl=self.result_path /'230306-194037'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'adain_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230306-194037'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'adain_result'/ 'multag2pix_{}_epoch'.format(epoche)
             # self.load_test(loadurl)
     
     
     #          230310-213847
             # print("convnet_dev_skeleton_NAMo_gate的测试") 
-            # loadurl=self.result_path /'230310-213847'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_skeleton_NAMo_gate_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230310-213847'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_skeleton_NAMo_gate_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
             
             
             # 230307-183630
             # print("convnet_dev_skeleton_Adain_NAM_gate的测试") 
-            # loadurl=self.result_path /'230307-183630'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_skeleton_Adain_NAM_gate_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230307-183630'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_skeleton_Adain_NAM_gate_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
             
 #             230310-145447
             # print("convnet_dev_skeleton_NAM_gate的测试") 
-            # loadurl=self.result_path /'230310-145447'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_skeleton_NAM_gate_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230310-145447'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_skeleton_NAM_gate_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
 #             convnet_dev_skeleton_Adain
 # 230314-213037  230416-190627
             # print("convnet_dev_skeleton_Adain的测试") 
-            # loadurl=self.result_path /'230416-190627'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_skeleton_Adain_sketch_result'/ 'tag2pix_{}_epoch'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_skeleton_Adain_single_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230416-190627'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_skeleton_Adain_sketch_result'/ 'multag2pix_{}_epoch'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_skeleton_Adain_single_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
 # /230327-002238
             # print("network_inputskeleton的测试") 
-            # loadurl=self.result_path /'230310-213847'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'network_inputskeleton_single_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230310-213847'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'network_inputskeleton_single_result'/ 'multag2pix_{}_epoch'.format(epoche)
 
             # 230418-232708
             # print("convnet_dev_skeleton_NAM_gate(不加骨架图的)的测试") 
-            # loadurl=self.result_path /'230418-232708'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_skeleton_NAM_gate_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230418-232708'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_skeleton_NAM_gate_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
 #             #       230415-110413  convnet_dev_skeleton_noadain  230424-100141    230629-094515
             print("convnet_dev_skeleton_noadain(不加adain的)的测试") 
-            loadurl=self.result_path /'230629-094515'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            result_path = self.result_path /'convnet_dev_skeleton_noadain_new_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            loadurl=self.result_path /'230629-094515'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            result_path = self.result_path /'convnet_dev_skeleton_noadain_new_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
-#             230331-223523  Tag2Pix
+#             230331-223523  multag2pix
             # print("network的测试") 
-            # loadurl=self.result_path /'230331-223523'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'network_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230331-223523'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'network_result'/ 'multag2pix_{}_epoch'.format(epoche)
 
             # print("network的测试") 
-            # loadurl=self.result_path /'230331-223523'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'network_single_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230331-223523'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'network_single_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
             # print("network_skeleton的测试") 
-            # loadurl=self.result_path /'230409-190219'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'network_skeleton_real__result'/ 'tag2pix_{}_epoch'.format(epoche)  
-            # result_path = self.result_path /'network_skeleton_real_single1_result'/ 'tag2pix_{}_epoch'.format(epoche)
-            # result_path = self.result_path /'change_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230409-190219'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'network_skeleton_real__result'/ 'multag2pix_{}_epoch'.format(epoche)  
+            # result_path = self.result_path /'network_skeleton_real_single1_result'/ 'multag2pix_{}_epoch'.format(epoche)
+            # result_path = self.result_path /'change_result'/ 'multag2pix_{}_epoch'.format(epoche)
             
 
 
@@ -459,8 +459,8 @@ class tag2pix(object):
 # 230409-192330
 # 230416-185919
             # print("convnet_dev_CBAM_skeleton_adain的测试") 
-            # loadurl=self.result_path /'230416-185919'/ 'tag2pix_{}_epoch.pkl'.format(epoche)
-            # result_path = self.result_path /'convnet_dev_CBAM_skeleton_adain_result'/ 'tag2pix_{}_epoch'.format(epoche)
+            # loadurl=self.result_path /'230416-185919'/ 'multag2pix_{}_epoch.pkl'.format(epoche)
+            # result_path = self.result_path /'convnet_dev_CBAM_skeleton_adain_result'/ 'multag2pix_{}_epoch'.format(epoche)
 
             if not result_path.exists():
                 result_path.mkdir()
@@ -514,7 +514,7 @@ class tag2pix(object):
                         
 #         图片保存完了  在result_path里
 
-            # result_path=self.result_path / 'tag2pix_{}_epoch'.format(epoche)
+            # result_path=self.result_path / 'multag2pix_{}_epoch'.format(epoche)
     
             test_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), self.data_dir,'benchmark')
             # print(str(test_path))
@@ -561,11 +561,11 @@ class tag2pix(object):
             # G_s = self.color_revert(G_s)
 
         utils.save_images(G_f[:image_frame_dim * image_frame_dim, :, :, :], [image_frame_dim, image_frame_dim],
-                          self.result_path / 'tag2pix_epoch{:03d}_G_f.png'.format(epoch))
+                          self.result_path / 'multag2pix_epoch{:03d}_G_f.png'.format(epoch))
         utils.save_images(G_g[:image_frame_dim * image_frame_dim, :, :, :], [image_frame_dim, image_frame_dim],
-                          self.result_path / 'tag2pix_epoch{:03d}_G_g.png'.format(epoch))
+                          self.result_path / 'multag2pix_epoch{:03d}_G_g.png'.format(epoch))
         # utils.save_images(G_s[:image_frame_dim * image_frame_dim, :, :, :], [image_frame_dim, image_frame_dim],
-        #                   self.result_path / 'tag2pix_epoch{:03d}_G_s.png'.format(epoch))
+        #                   self.result_path / 'multag2pix_epoch{:03d}_G_s.png'.format(epoch))
 
     def save(self, save_epoch):
         if not self.result_path.exists():
@@ -583,9 +583,9 @@ class tag2pix(object):
             'D_optimizer' : self.D_optimizer.state_dict(),
             'finish_epoch' : save_epoch,
             'result_path' : str(save_dir)
-            }, str(save_dir / 'tag2pix_{}_epoch.pkl'.format(save_epoch)))
+            }, str(save_dir / 'multag2pix_{}_epoch.pkl'.format(save_epoch)))
 
-        with (save_dir / 'tag2pix_{}_history.pkl'.format(save_epoch)).open('wb') as f:
+        with (save_dir / 'multag2pix_{}_history.pkl'.format(save_epoch)).open('wb') as f:
             pickle.dump(self.train_hist, f)
 
         print("============= save success =============")
@@ -642,9 +642,9 @@ class tag2pix(object):
         original_np = self.color_revert(original_)
 
         utils.save_images(original_np[:image_frame_dim * image_frame_dim, :, :, :], [image_frame_dim, image_frame_dim],
-                        self.result_path / 'tag2pix_original.png')
+                        self.result_path / 'multag2pix_original.png')
         utils.save_images(sketch_np[:image_frame_dim * image_frame_dim, :, :, :], [image_frame_dim, image_frame_dim],
-                        self.result_path / 'tag2pix_sketch.png')
+                        self.result_path / 'multag2pix_sketch.png')
 
         return original_, sketch_, skeleton_, iv_tag_, cv_tag_
 
