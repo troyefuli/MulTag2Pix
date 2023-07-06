@@ -9,4 +9,6 @@ I put the test dataset on Baidu Netdisk, the link is as follows.
 ## An example of our method
 ![image](https://github.com/troyefuli/MulTag2Pix/blob/main/img/show.jpg)
 
-##
+## Visual model effect display
+![image](https://github.com/troyefuli/MulTag2Pix/blob/main/img/multi.jpg)
+![image](https://github.com/troyefuli/MulTag2Pix/blob/main/img/show_more.jpg)
